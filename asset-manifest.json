@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lego-landing/static/css/main.e6c13ad2.css",
+    "main.js": "/lego-landing/static/js/main.ed292e90.js",
+    "index.html": "/lego-landing/index.html",
+    "main.e6c13ad2.css.map": "/lego-landing/static/css/main.e6c13ad2.css.map",
+    "main.ed292e90.js.map": "/lego-landing/static/js/main.ed292e90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ed292e90.js"
+  ]
+}
