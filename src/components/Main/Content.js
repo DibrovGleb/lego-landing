@@ -1,30 +1,32 @@
-[
+import Img from '../images'
+const data = [
 { 
     "id":1,
     "title": "Диагностика автомобиля перед покупкой", 
     "description": "Расскажем обо всех скрытых дефектах автомобиля с пробегом", 
     "btntext": "Записаться",
-    "img": "src/components/images/2cars.png"
+    "img": Img.Cars
 },
 { 
     "id":2,
     "title": "Онлайн показ автомобиля по видеосвязи", 
     "description": "Проведем онлайн-показ интересующего автомобиля в удобное для Вас время", 
     "btntext": "Оставить заявку",
-    "img": "src/components/images/kia.png"
+    "img": Img.Kia
 },
 { 
     "id":3,
     "title": "Онлайн бронирование", 
     "description": "Забронируйте понравившийся автомобиль без визита в дилерский центр", 
     "btntext": "Забронировать",
-    "img": "src/components/images/Phone.png"
+    "img": Img.Phone
 },
 { 
     "id":4,
     "title": "Онлайн оценка автомобиля с пробегом", 
     "description": "Узнайте предварительную стоимость автомобиля за 1 мин, указав его параметры", 
     "btntext": "Оценить",
-    "img": "src/components/images/Mercedes.png"
+    "img": Img.Mercedes
 }
 ]
+export default data
