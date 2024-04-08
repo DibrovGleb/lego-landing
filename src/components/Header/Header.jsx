@@ -1,9 +1,12 @@
 import './Header.sass';
 import Icons from '../icons';
+import { useState} from "react";
 
 
 export default function Header(props) {
-    const {width} = props
+    const {width, small, little} = props,
+          [menu, setMenu] = useState(true)
+
     return (
         <header>
             <nav>
@@ -16,12 +19,12 @@ export default function Header(props) {
                         <li><a href="">Сервис</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>}
-                    <button className="request-call">Заказать звонок</button>
-                    {width && <img className="logo" src={Icons.Bar} alt="" />}
+                    {!little && <button className="request-call">Заказать звонок</button>}
+                    {width && <img src={menu ?Icons.Bar : Icons.Cls} alt="" onClick={()=>setMenu(!menu)}/>}
                 </div>
             </nav>
-            <hr></hr>
-            <div className="smallheader">
+            {!small && <hr></hr>}
+            {!small && <div className="smallheader">
                 <div className='geo'>
                     <span>
                         <img className="icon" src={Icons.Geo} alt="" />
@@ -35,7 +38,7 @@ export default function Header(props) {
                         <img className="icon" src={Icons.Clocks} alt="" />
                         9:00 - 21:00 (ежедневно)</span>
                 </div>
-            </div>
+            </div>}
         </header>
 
     )

@@ -12,29 +12,115 @@ body
   display: grid
   justify-items: center
   
-@media (max-width: 1290px)
+@media (max-width: 1300px)
   header
-    display: block
     nav
-      width: 90vw
-      margin: 0 5vw
+      width: 852px
     .smallheader
-      width: 90vw
-      margin: 0 5vw
-  .container
-    width: 850px
-    height: 600px
-    div
-      &:nth-child(1)
-        grid-row: 1
-        grid-column: 1
-      &:nth-child(3)
-        grid-row: 2
-        grid-column: 1
-      &:nth-child(2)
-        grid-row: 1
-        grid-column: 2
-      &:nth-child(4)
-        grid-row: 2
-        grid-column: 2
+      width: 852px
+  main
+    width: 852px
+    h1
+      width: 603px
+    .container
+      height: 476px
+      div
+        p
+          width: 306px
+        button
+          width: 148px
+          padding: 13px 0 
+        &:nth-child(1)
+          grid-row: 1
+          grid-column: 1
+          img
+            width: 217px
+            bottom: 0
+        &:nth-child(3)
+          grid-row: 2
+          grid-column: 1
+          p
+            margin-bottom: 52px
+          img
+            height: 95px
+            right: 20px
+        &:nth-child(2)
+          grid-row: 1
+          grid-column: 2
+        &:nth-child(4)
+          grid-row: 2
+          grid-column: 2
+          img
+            width: 217px
+
+@media (max-width: 860px)
+  header
+    height: 65px
+    nav
+      width: 680px
+  main
+    width: 680px
+    margin-bottom:200px
+    .container
+      display: flex
+      flex-direction: column
+      height: auto
+      div
+        &:nth-child(1), &:nth-child(2)
+          img
+            right:20px
+        &:nth-child(3)
+          img
+            height: 123px
+        &:nth-child(3),&:nth-child(4)
+          img
+            right:40px
+
+@media (max-width: 700px)
+  header
+    nav
+      width: 335px
+  main
+    width: 335px
+    h1
+      width: 335px
+      margin: 40px 0 30px
+      font-size: 16px
+    .container
+      div
+        padding: 17px 15px
+        button
+          padding:11px
+        h3
+          font-size: 16px
+          margin:0 0 10px
+        &:nth-child(1)
+          h3
+            margin:0 0 10px
+        &:nth-child(2)
+          h3
+            width:230px
+          img
+            right:0
+            width:149px
+        &:nth-child(3)
+          img
+            height: 74px
+            right: 25px
+          p
+            width:230px
+            margin: 0 0 30px
+        &:nth-child(4)
+          h3
+            width:230px
+          p
+            width:260px
+            margin: 0 0 15px
+        &:nth-child(1),&:nth-child(4)
+          img
+            width:149px
+            right:10px
+
+
         
+    
